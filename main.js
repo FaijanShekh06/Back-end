@@ -1,18 +1,15 @@
-// const { createServer } = require('node:http');
 
 
-import { a,b,c } from './mymodule.js'
-console.log(a,b,c)
+// import { a, b, c } from './mymodule.js'
+// console.log(a, b, c)
 
-// const hostname = '127.0.0.1';
-// const port = 3000;
+// import obj from './mymodule.js'
+// console.log(obj);
+(function (exports, require, module, __filename, __dirname) {
+  //Module code actually lives here
+})
 
-// const server = createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/html');
-//   res.end('<h1>Hello World</h1> <p>This is a simple Node.js server.</p>');
-// });
+const a = require('./mymodule2.js')
+console.log(a);
 
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });
+
