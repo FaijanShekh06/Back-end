@@ -10,14 +10,19 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  const toso = new Todo({
+  const todo = new Todo({
     title: "Hey This First Todo",
     desc: "Description of Todo",
     isDone: false,
-    days: "4",
+    days: Math.floor(Math.random() * 45 * 5 * Math.random()),
   });
-  toso.save();
+  todo.save();
   res.send("Hello World!");
+});
+
+app.get("/a", async (req, res) => {
+  const todo = await Todo.findOne({});
+  res.json({ title: todo.title, desc: todo.desc });
 });
 
 app.listen(port, () => {
