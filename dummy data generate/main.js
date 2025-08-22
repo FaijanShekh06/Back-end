@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import { Employee } from "./models/Employee.js";
 
-let conn = mongoose.connect(
-  "mongodb+srv://faijan:1234@cluster0.ut6ef5c.mongodb.net/company"
+let con = await mongoose.connect(
+  "mongodb+srv://usaername:password@cluster0.ut6ef5c.mongodb.net/todo"
 );
 const app = express();
 const port = 3000;
