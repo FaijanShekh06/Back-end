@@ -3,7 +3,7 @@ import express from "express";
 import { Todo } from "./models/Todo.js";
 
 let con = await mongoose.connect(
-  "mongodb+srv://faijan:1234@cluster0.ut6ef5c.mongodb.net/todo"
+  "mongodb+srv://usaername:password@cluster0.ut6ef5c.mongodb.net/todo"
 );
 
 const app = express();
