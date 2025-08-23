@@ -1,9 +1,9 @@
 {
-  "name": "back-end",
+  "name": "tailwindcss-practice",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
+    "dev":"vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,10 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.12",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
+    "@tailwindcss/cli": "^4.1.12",
     "tailwindcss": "^4.1.12"
   }
 }
